@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 30px 7%;
+    background-color: #ffc244;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid black;
+}
+.container img{
+    width: 140px;
+}
+.container button{
+    background-color: #00a082;
+    border-radius: 100px;
+    color: white;
+    padding: 13px 50px;
+    transition: 1s;
+    cursor: pointer;
+    border:none;
+}
+
+.container button:hover{
+    background-color:#287466 ;
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    padding: 160px ;
+    background-color: #ffc244;
+    height: 100vh;
+}
+
+.text h1{
+    font-size: 60px;
+    text-align: center;
+    font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;
+}
+
+.text p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.input{
+    display: flex;
+}
+.input i{
+    background-color:  #00a082;
+    padding: 15px;
+}
+.input input{
+    padding: 10px 155px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+}
+
+.location i{
+    background-color: white;
+    color:#00a082 ;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.location p{
+    color: #00a082;
+    font-size: 15px;
+}
+
+
+
+.food h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;
+}
+
+.rest{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 130px;
+}
+
+.rest div{
+    width: 300px;
+    height: 200px;
+}
+
+.rest img{
+    border-radius: 50%;
+}
+
+.rest h3{
+    background-color:#ffc244 ;
+    margin: 0 180px;
+    padding: 5px;
+    border-radius: 8px;
+    margin-left: auto;
+}
+
+@media screen and (max-width:1192px){
+    .rest div{
+        flex-wrap: wrap;
+    }
+    .container{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .main_container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:893px) {
+    .food h1{
+        margin: 80px;
+    }
+}
+
+@media screen and (max-width:493px) {
+    .main_container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:522px) {
+    .input input{
+        padding: 10px 100px;
+    }
+}
+
